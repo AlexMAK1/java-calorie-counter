@@ -44,13 +44,13 @@ public class Main {
         }
     }
 
-        public static void printMenu () {
-            System.out.println("Что вы хотите сделать? ");
-            System.out.println("1 - Ввести количество шагов за определённый день");
-            System.out.println("2 - Напечатать статистику за определённый месяц");
-            System.out.println("3 - Изменить цель по количеству шагов в день");
-            System.out.println("0 - Выход");
-        }
+    public static void printMenu() {
+        System.out.println("Что вы хотите сделать? ");
+        System.out.println("1 - Ввести количество шагов за определённый день");
+        System.out.println("2 - Напечатать статистику за определённый месяц");
+        System.out.println("3 - Изменить цель по количеству шагов в день");
+        System.out.println("0 - Выход");
     }
+}
 
 

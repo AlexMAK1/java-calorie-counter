@@ -1,7 +1,7 @@
 
 
 
-public class Month  {
+public class Month {
     int number;
 
     int convert(String month) {
