@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class MonthData {
-
     int[] monthDays = new int[30];
 
     void add(int steps, int numberDay) {
@@ -15,11 +14,10 @@ public class MonthData {
     void print() {
         for (int i = 0; i < monthDays.length; i++) {
             System.out.print(i + 1 + " день: " + monthDays[i] + ", ");
-
         }
     }
 
-    int sum() {
+    int findsum() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
@@ -34,38 +32,34 @@ public class MonthData {
                 maxSteps = monthDay;
             }
         }
-
         return maxSteps;
     }
 
-    int average() {
+    int findaverage() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
         }
         return (sum / 30);
-
     }
 
-    int distance() {
+    int finddistance() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
         }
-        return ((sum * 75) / 100000);
-
+        return (sum * 75) / 100000;
     }
 
-    int kKal() {
+    int findkkal() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
         }
-        return ((sum * 50) / 1000);
-
+        return (sum * 50) / 1000;
     }
 
-    int bestseries(int goal) {
+     int findbestseller(int goal) {
         int bestday = 0;
         int max = 0;
         ArrayList<Integer> bestDays = new ArrayList<>();
@@ -73,20 +67,16 @@ public class MonthData {
             if (monthDay >= goal) {
                 bestday++;
                 bestDays.add(bestday);
-
-
             } else {
                 bestday = 0;
                 bestDays.add(bestday);
             }
         }
-
         for (int best : bestDays) {
             if (best > max) {
                 max = best;
             }
         }
-
         return max;
     }
 }

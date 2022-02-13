@@ -1,11 +1,7 @@
-
-
-
 public class Month {
     int number;
 
     int convert(String month) {
-
         switch (month) {
             case "Январь":
                 number = 1;
@@ -47,8 +43,6 @@ public class Month {
                 System.out.println("Извините, такого месяца нет.");
                 break;
         }
-
-
         return number;
     }
 }
