@@ -1,4 +1,4 @@
-public class Month {
+public class MonthNameConverter {
     int number;
 
     int convert(String month) {

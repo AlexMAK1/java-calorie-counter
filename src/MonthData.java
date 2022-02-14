@@ -17,7 +17,7 @@ public class MonthData {
         }
     }
 
-    int findsum() {
+    int findSum() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
@@ -25,7 +25,7 @@ public class MonthData {
         return sum;
     }
 
-    int findmax() {
+    int findMax() {
         int maxSteps = 0;
         for (int monthDay : monthDays) {
             if (monthDay > maxSteps) {
@@ -35,7 +35,7 @@ public class MonthData {
         return maxSteps;
     }
 
-    int findaverage() {
+    int findAverage() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
@@ -43,7 +43,7 @@ public class MonthData {
         return (sum / 30);
     }
 
-    int finddistance() {
+    int findDistance() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
@@ -51,7 +51,7 @@ public class MonthData {
         return (sum * 75) / 100000;
     }
 
-    int findkkal() {
+    int findKcal() {
         int sum = 0;
         for (int monthDay : monthDays) {
             sum += monthDay;
@@ -59,17 +59,17 @@ public class MonthData {
         return (sum * 50) / 1000;
     }
 
-     int findbestseller(int goal) {
-        int bestday = 0;
+    int findBestseller(int goal) {
+        int bestDay = 0;
         int max = 0;
         ArrayList<Integer> bestDays = new ArrayList<>();
         for (int monthDay : monthDays) {
             if (monthDay >= goal) {
-                bestday++;
-                bestDays.add(bestday);
+                bestDay++;
+                bestDays.add(bestDay);
             } else {
-                bestday = 0;
-                bestDays.add(bestday);
+                bestDay = 0;
+                bestDays.add(bestDay);
             }
         }
         for (int best : bestDays) {
@@ -80,5 +80,3 @@ public class MonthData {
         return max;
     }
 }
-
-

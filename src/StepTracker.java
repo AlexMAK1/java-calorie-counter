@@ -2,7 +2,6 @@ import java.util.HashMap;
 
 public class StepTracker {
     HashMap<Integer, MonthData> monthToData = new HashMap<>();
-
     int goal = 10000;
 
     public StepTracker() {
@@ -20,12 +19,12 @@ public class StepTracker {
         MonthData result = monthToData.get(nameMonth - 1);
         result.print();
         System.out.println(" ");
-        System.out.println("Общее количество шагов за месяц:" + result.findsum());
-        System.out.println("Максимальное пройденное количество шагов в месяце:" + result.findmax());
-        System.out.println("Среднее количество шагов за месяц:" + result.findaverage());
-        System.out.println("Пройденная дистанция (в км) за месяц:" + result.finddistance());
-        System.out.println("Общее количество сожжённых килокалорий:" + result.findkkal());
-        System.out.println("Лучшая серия: максимальное количество подряд идущих дней, в течение которых количество шагов за день было равно или выше целевого:" + result.findbestseller(goal));
+        System.out.println("Общее количество шагов за месяц:" + result.findSum());
+        System.out.println("Максимальное пройденное количество шагов в месяце:" + result.findMax());
+        System.out.println("Среднее количество шагов за месяц:" + result.findAverage());
+        System.out.println("Пройденная дистанция (в км) за месяц:" + result.findDistance());
+        System.out.println("Общее количество сожжённых килокалорий:" + result.findKcal());
+        System.out.println("Лучшая серия: максимальное количество подряд идущих дней, в течение которых количество шагов за день было равно или выше целевого:" + result.findBestseller(goal));
     }
 
     void changeGoal(int target) {
@@ -37,11 +36,3 @@ public class StepTracker {
         }
     }
 }
-
-
-
-
-
-
-
-

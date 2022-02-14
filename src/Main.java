@@ -5,7 +5,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         StepTracker stepTracker = new StepTracker();
-        Month rush = new Month();
+        MonthNameConverter monthNameConverter = new MonthNameConverter();
 
         while (true) {
             printMenu();
@@ -14,7 +14,7 @@ public class Main {
             if (command == 1) {
                 System.out.println("Введите название месяца :");
                 String month = scanner.next();
-                int nameMonth = rush.convert(month);
+                int nameMonth = monthNameConverter.convert(month);
                 System.out.println("Введите номер дня :");
                 int numberDay = scanner.nextInt();
                 System.out.println("Введите количество шагов, пройденных в этот день :");
@@ -23,7 +23,7 @@ public class Main {
             } else if (command == 2) {
                 System.out.println("Введите название месяца, за который требуется статистика :");
                 String month = scanner.next();
-                int nameMonth = rush.convert(month);
+                int nameMonth = monthNameConverter.convert(month);
                 stepTracker.printDataMonth(nameMonth);
             } else if (command == 3) {
                 System.out.println("Укажите цель по количеству шагов в день :");
@@ -46,5 +46,3 @@ public class Main {
         System.out.println("0 - Выход");
     }
 }
-
-
