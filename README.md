@@ -1,4 +1,4 @@
-# java-sprint1-hw
+# java-calorie-counter
 Calorie Counter.
 
 Formulation of the task.
